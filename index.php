@@ -14,7 +14,7 @@ if (isset($_GET['deconnexion']))
     session_destroy();
     header('Location: .');
     exit();
-}a
+}
 
 $db = new PDO('mysql:host=localhost;dbname=poo_ocr', 'root', '');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING); // On émet une alerte à chaque fois qu'une requête a échoué.
